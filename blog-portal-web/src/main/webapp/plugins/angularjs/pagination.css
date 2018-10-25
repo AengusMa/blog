@@ -6,3 +6,15 @@
 .page-list .page-total input, .page-list .page-total select{height: 26px; border: 1px solid #ddd;}
 .page-list .page-total input {width: 40px; padding-left:3px;}
 .page-list .page-total select {width: 50px;}
+
+.page-list  ul {
+  width: 500px; //设置足够的宽度
+  overflow: hidden;
+  white-space:nowrap; //处理块元素中的空白符和换行
+}
+.page-list li{
+  list-style: none;
+  float: left; //向左排列
+  margin-left: 15px;
+  width: 10px;
+}
