@@ -18,7 +18,8 @@ public class ArticleController {
 
   @Reference
   private ArticleService articleService;
-
+  @Reference
+  private CategoryService categoryService;
   @RequestMapping("/test")
   public void findCartList() {
     Article article = new Article();
