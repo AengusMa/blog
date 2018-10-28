@@ -19,8 +19,9 @@ public class ArticleController {
 
   @Reference
   private ArticleService articleService;
-  @Reference
-  private CategoryService categoryService;
+//  @Reference
+//  private CategoryService categoryService;
+
   @RequestMapping("/test")
   public void findCartList() {
     Article article = new Article();
@@ -30,7 +31,8 @@ public class ArticleController {
     article.setContent("content");
     article.setHits(22);
     article.setPictureurl("images/2.jpg");
-    article.setSummary("还在为浪漫的求婚词而烦恼不知道该怎么说吗？女孩子都有着浪漫的小情怀，对于求婚更是抱着满满的浪漫期待，也希望在求婚那一天对方可以给自己一个最浪漫的求婚词。");
+    article
+        .setSummary("还在为浪漫的求婚词而烦恼不知道该怎么说吗？女孩子都有着浪漫的小情怀，对于求婚更是抱着满满的浪漫期待，也希望在求婚那一天对方可以给自己一个最浪漫的求婚词。");
     articleService.insert(article);
   }
 
