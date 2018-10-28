@@ -19,8 +19,8 @@ public class ArticleController {
 
   @Reference
   private ArticleService articleService;
-//  @Reference
-//  private CategoryService categoryService;
+  @Reference
+  private CategoryService categoryService;
 
   @RequestMapping("/test")
   public void findCartList() {
