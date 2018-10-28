@@ -1,5 +1,6 @@
 package com.blog.content.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.blog.content.service.CategoryService;
 import com.blog.mapper.CategoryMapper;
 import com.blog.pojo.Category;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author mawenlong
  * @date 2018/09/27
  */
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
   @Autowired

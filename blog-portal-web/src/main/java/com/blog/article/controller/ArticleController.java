@@ -2,6 +2,7 @@ package com.blog.article.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.blog.content.service.ArticleService;
+import com.blog.content.service.CategoryService;
 import com.blog.pojo.Article;
 import com.blog.pojo.PageResult;
 import java.util.Date;
